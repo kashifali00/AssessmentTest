@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="RegressionTest" verbose="3">
+    <listeners>
+        <listener class-name="com.restassured.Listeners.TestListeners"/>
+    </listeners>
+    <test verbose="1" name="loginPage" parallel="false">
+
+        <classes>
+            <parameter name="id" value="16"></parameter>
+            <class name="com.restassured.tests.TestGet"></class>
+        </classes>
+    </test>
+</suite>
